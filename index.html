@@ -455,27 +455,7 @@
     </div>
   </section>
 
-  <section class="form-section">
- <div class="container">
-  <h1>Inquiry </h1>
-  <form target="_blank" action="https://formsubmit.co/starterkartt@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-  </form>
-</div>
-    </form>
+l
     <div style="text-align:center; margin-top:13px;">
       Prefer WhatsApp?
       <a class="whatsapp-link" href="https://wa.me/9818082449" target="_blank">Chat Now!</a>
@@ -493,6 +473,30 @@
     <div class="faq-q">What after delivery?</div>
     <div>The Premium plan includes ongoing WhatsApp support for one month.</div>
   </section>
+  <form action="https://formsubmit.co/your@email.com" method="POST">
+  <label for="name">Full Name*</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email Address*</label>
+  <input type="email" id="email" name="email" required>
+  <label for="whatsapp">WhatsApp Number</label>
+  <input type="text" id="whatsapp" name="whatsapp">
+  <label for="plan">Interested In</label>
+  <select id="plan" name="plan" required>
+    <option value="">-- Select Plan --</option>
+    <option value="Basic Starter">Basic Starter</option>
+    <option value="Standard Launch">Standard Launch</option>
+    <option value="Premium Boost">Premium Boost</option>
+    <option value="Custom/Other">Custom / Other</option>
+  </select>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4"></textarea>
+  <button type="submit">Submit Inquiry</button>
+  <!-- Anti-bot field -->
+  <input type="text" name="_honey" style="display:none">
+  <!-- Redirect user to thank you page to prevent resubmits -->
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+  </form>
+  
 
   <footer>
     © 2025 StarterKart • Dropshipping Experts
